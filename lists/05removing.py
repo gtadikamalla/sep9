@@ -1,6 +1,7 @@
 #Removing from a list ===
 letters1 = list('spam')
-letters1 += 'python'
+letters1+='python'
+print(letters1)
 c = [-45, 6, 0, 72, 1543]
 popped = c.pop()
 c = [-45, 6, 0, 72, 1543]
@@ -15,6 +16,8 @@ print(c)
 c = [-45, 6, 0, 72, 1543]
 print('Removes items at positions 0 and 1')
 del c[0:2] #Removes items at positions 0 and 1
+print(c)
+del c[0]
 print(c)
 c = [-45, 6, 0, 72, 1543]
 print('list', c)
