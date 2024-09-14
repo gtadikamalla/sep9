@@ -10,12 +10,12 @@
 
 
 numbers = [10, 3, 7, 1, 9, 4, 2, 8, 5, 6]
-list(filter(lambda x: x % 2 != 0, numbers))
+print(list(filter(lambda x: x % 2 != 0, numbers)))
 
 #Another lambda example
 #Problem: Square the numbers in a list
 numbers = [10, 3, 7, 1, 9, 4, 2, 8, 5, 6]
-list(map(lambda x: x ** 2, numbers))
+print(list(map(lambda x: x ** 2, numbers)))
 #Function map’s first argument is a function that receives one value and returns a new value.
 #equivalent list comprehension: [item ** 2 for item in numbers]
 
@@ -23,7 +23,7 @@ list(map(lambda x: x ** 2, numbers))
 #Find squares of odd numbers from a list
 
 numbers = [10, 3, 7, 1, 9, 4, 2, 8, 5, 6]
-list(map(lambda x: x ** 2, 
-         filter(lambda x: x % 2 != 0, numbers)))
+print(list(
+         filter(lambda x: x % 2 != 0,map(lambda x: x ** 2,  numbers))))
 
 #Equivalent list comprehension:  [x ** 2 for x in numbers if x % 2 != 0]

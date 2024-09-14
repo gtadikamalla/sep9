@@ -6,8 +6,10 @@ numbers = [10, 3, 7, 1, 9, 4, 2, 8, 5, 6]
 def is_odd(x):
     """Returns True only if x is odd."""
     return x % 2 != 0
-list(filter(is_odd, numbers))
+print(list(filter(is_odd, numbers)))
 
 # or use 
 
-[item for item in numbers if is_odd(item)]
+print([item 
+       for item in numbers 
+       if is_odd(item)])

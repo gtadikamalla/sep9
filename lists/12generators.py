@@ -5,10 +5,13 @@
 
 #create a list of square of odd numbers in a list
 numbers = [10, 3, 7, 1, 9, 4, 2, 8, 5, 6]
-for value in (x ** 2 for x in numbers if x % 2 != 0):
-    print(value, end='  ')
+# for value in (x ** 2 for x in numbers if x % 2 != 0):
+#     print(value, end='  ')
 
 #create a list of square of odd numbers in a list using a generator
-squaresOfOodds = (x ** 2 for x in numbers if x % 2 != 0)
-[i for i in squareOfOdds]
+squaresOfOdds = (x ** 2 
+                 for x in numbers 
+                 if x % 2 != 0)
+
+print([i for i in squaresOfOdds])
 

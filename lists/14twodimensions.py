@@ -10,3 +10,8 @@ for i, row in enumerate(matrix1):
     print()
 #Outer for statement iterates over the list’s ows one row at a time.
 #During each iteration of the outer for statement, the inner for statement iterates over each column in the current row.
+
+# for i, row in enumerate(matrix1):
+#     for j, item in enumerate(row):
+#         print('matrix1[{}][{}]={} '.format(i, j, item), end=' ')
+#     print()
